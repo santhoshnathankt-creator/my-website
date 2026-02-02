@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EduFlow - Mastering React Hooks</title>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#2b8cee",
+        "background-light": "#f8fafc",
+        "background-dark": "#101922",
+      },
+      fontFamily: {
+        display: ["ui-sans-serif", "system-ui", "sans-serif"],
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
+        full: "9999px",
+      },
+    },
+  },
+};
+</script>
+
+<style type="text/tailwindcss">
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.video-container {
+  aspect-ratio: 16 / 9;
+}
+</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+
+<!-- HEADER -->
+<header class="sticky top-0 bg-white dark:bg-background-dark border-b border-slate-200">
+  <div class="max-w-[1600px] mx-auto px-6 h-16 flex items-center justify-between">
+
+    <div class="flex items-center gap-6">
+      <div class="flex items-center gap-2">
+        <div class="bg-primary p-2 text-white rounded">
+          <span class="material-symbols-outlined">school</span>
+        </div>
+        <h1 class="font-bold text-lg">EduFlow</h1>
+      </div>
+
+      <div class="text-sm text-slate-500">
+        Courses &gt; <span class="text-slate-900 dark:text-white">Mastering React Hooks</span>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <button class="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-sm rounded">
+        Share
+      </button>
+      <img class="w-8 h-8 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVFvK1f0ETgWtL1k6sgpDEE4XsCDpH51GOjQRSh-q0A3ClMdKksdn66FVZ4oEz_LmopTFQ0xDaK5CIJQ0OIRVXu-k4kF1Hh1r7Z3-LuRaF4ozKEgK5-74E69-rePDzTDd-z9NWE2DIIaKXF_YgYPD8RJp2lLPJzR4trLVpZoUhlY4zH4KWxmJl0HFCG019-6kR35D8CgQm1c3yx5-a22BuDbCSOnzafPJmdlkHuc-G9_pMoN-kBltTod6tAUpvttVMku0Oq2caN8I" />
+    </div>
+
+  </div>
+</header>
+
+<div class="max-w-[1600px] mx-auto flex">
+
+<!-- SIDEBAR -->
+<aside class="w-80 bg-white dark:bg-background-dark border-r border-slate-200 p-4">
+
+  <h2 class="font-bold mb-2">Course Content</h2>
+  <div class="w-full bg-slate-200 h-2 mb-4">
+    <div class="bg-primary h-2 w-[45%]"></div>
+  </div>
+
+  <p class="text-xs font-bold text-slate-400 mb-2">Module 1: Introduction</p>
+
+  <button class="w-full flex items-center gap-2 p-2 bg-slate-100 rounded mb-1">
+    <span class="material-symbols-outlined text-emerald-500">check_circle</span>
+    Welcome to the Course
+  </button>
+
+  <button class="w-full flex items-center gap-2 p-2 bg-primary/10 text-primary rounded mb-1">
+    <span class="material-symbols-outlined">play_circle</span>
+    Why Hooks Matter?
+  </button>
+
+  <button class="w-full flex items-center gap-2 p-2 rounded mb-4">
+    <span class="material-symbols-outlined">radio_button_unchecked</span>
+    The History of State
+  </button>
+
+  <p class="text-xs font-bold text-slate-400 mb-2">Module 2: Basic Hooks</p>
+
+  <button class="w-full flex items-center gap-2 p-2 rounded mb-1">
+    <span class="material-symbols-outlined">radio_button_unchecked</span>
+    useState Deep Dive
+  </button>
+
+  <button class="w-full flex items-center gap-2 p-2 rounded">
+    <span class="material-symbols-outlined">radio_button_unchecked</span>
+    Handling useEffect
+  </button>
+
+</aside>
+
+<!-- MAIN -->
+<main class="flex-1 p-8 bg-white dark:bg-background-dark">
+
+  <div class="video-container bg-slate-900 mb-6">
+    <img class="w-full h-full object-cover opacity-60"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ-gPfvuFoe3yIhPICvjyfshyG3P4Bojdky0y5dHla-fbvbKLfSPEKHuiAd9_GSl-_jO1r5ZrvrB3asrll4LpVdn9jvuc1Lk8S7zC-nZU98IwWnHnm7oEmu7HbH1gCZfNOX9K3k1J5SC0HhqyJ6IG47lxzcDAv7TaPh98k0PAf4gxmUx9b4bSRYR-3HXWfxsw5cUWAqTUq7bG1VFX_ZbK1jT78EpvdbWzh-UQ4qlGRBqdHjR68GWvPiJg1ZqxEKSXMgU0NFSOmyAs" />
+  </div>
+
+  <h3 class="text-2xl font-bold mb-4">Mastering React Hooks & State</h3>
+
+  <p class="text-slate-600 mb-4">
+    Welcome to this comprehensive lesson on why Hooks were introduced to React
+    and how they changed frontend development.
+  </p>
+
+  <div class="bg-slate-100 p-4 rounded border mb-6">
+    <h4 class="font-bold mb-2">Key Takeaways</h4>
+    <ul class="list-disc pl-5 text-sm text-slate-600">
+      <li>Understand the Hooks mental model</li>
+      <li>Clean up side effects easily</li>
+      <li>Optimize performance</li>
+      <li>Avoid common bugs</li>
+    </ul>
+  </div>
+
+</main>
+
+</div>
+
+<footer class="border-t border-slate-200 p-4 text-xs text-slate-400 flex justify-between">
+  <p>© 2024 SkillFlow Learning Inc. - Mastery Journey</p>
+  <div class="flex gap-4">
+    <a href="#">Help & Support</a>
+    <a href="#">Course Feedback</a>
+    <a href="#">Next Lesson</a>
+  </div>
+</footer>
+
+</body>
+</html>

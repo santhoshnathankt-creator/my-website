@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillFlow - User Profile and Achievements</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#2b8cee",
+        lightbg: "#f6f7f8"
+      },
+      fontFamily: {
+        display: ["Lexend", "sans-serif"]
+      }
+    }
+  }
+}
+</script>
+
+<style>
+.material-symbols-outlined {
+  font-size: 20px;
+}
+</style>
+</head>
+
+<body class="bg-lightbg font-display text-slate-900">
+
+<!-- HEADER -->
+<header class="bg-white border-b p-4 flex justify-between items-center">
+  <div class="flex items-center gap-3">
+    <div class="bg-primary text-white p-2 rounded">
+      <span class="material-symbols-outlined">school</span>
+    </div>
+    <h1 class="font-bold text-lg">SkillFlow</h1>
+  </div>
+
+  <img class="w-8 h-8 rounded-full"
+    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVFvK1f0ETgWtL1k6sgpDEE4XsCDpH51GOjQRSh-q0A3ClMdKksdn66FVZ4oEz_LmopTFQ0xDaK5CIJQ0OIRVXu-k4kF1Hh1r7Z3-LuRaF4ozKEgK5-74E69-rePDzTDd-z9NWE2DIIaKXF_YgYPD8RJp2lLPJzR4trLVpZoUhlY4zH4KWxmJl0HFCG019-6kR35D8CgQm1c3yx5-a22BuDbCSOnzafPJmdlkHuc-G9_pMoN-kBltTod6tAUpvttVMku0Oq2caN8I">
+</header>
+
+<!-- PAGE -->
+<main class="max-w-6xl mx-auto p-6">
+
+<!-- PROFILE -->
+<section class="bg-white border p-6 mb-8 flex flex-col md:flex-row items-center gap-6">
+  <img class="w-28 h-28 rounded-full"
+    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVFvK1f0ETgWtL1k6sgpDEE4XsCDpH51GOjQRSh-q0A3ClMdKksdn66FVZ4oEz_LmopTFQ0xDaK5CIJQ0OIRVXu-k4kF1Hh1r7Z3-LuRaF4ozKEgK5-74E69-rePDzTDd-z9NWE2DIIaKXF_YgYPD8RJp2lLPJzR4trLVpZoUhlY4zH4KWxmJl0HFCG019-6kR35D8CgQm1c3yx5-a22BuDbCSOnzafPJmdlkHuc-G9_pMoN-kBltTod6tAUpvttVMku0Oq2caN8I">
+
+  <div>
+    <h2 class="text-2xl font-bold">sandy</h2>
+    <p class="text-slate-500">Senior Frontend Enthusiast • Chennai, INDIA</p>
+
+    <div class="flex gap-2 mt-2 text-xs">
+      <span class="bg-slate-100 px-3 py-1 rounded">Level 24</span>
+      <span class="bg-blue-100 text-primary px-3 py-1 rounded">Web Architect</span>
+      <span class="bg-green-100 text-green-600 px-3 py-1 rounded">8 Day Streak</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="bg-white border p-6 mb-8">
+  <h3 class="text-xl font-bold mb-4">Learning Statistics</h3>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+    <div>
+      <p class="text-sm text-slate-500">Total Hours</p>
+      <p class="text-xl font-bold">124.5</p>
+    </div>
+    <div>
+      <p class="text-sm text-slate-500">Courses Done</p>
+      <p class="text-xl font-bold">12</p>
+    </div>
+    <div>
+      <p class="text-sm text-slate-500">Streak</p>
+      <p class="text-xl font-bold">8 Days</p>
+    </div>
+    <div>
+      <p class="text-sm text-slate-500">Points</p>
+      <p class="text-xl font-bold">2.4k</p>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section>
+  <h3 class="text-xl font-bold mb-4">Completed Courses</h3>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+    <div class="bg-white border p-4">
+      <img class="w-full mb-2"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ-gPfvuFoe3yIhPICvjyfshyG3P4Bojdky0y5dHla-fbvbKLfSPEKHuiAd9_GSl-_jO1r5ZrvrB3asrll4LpVdn9jvuc1Lk8S7zC-nZU98IwWnHnm7oEmu7HbH1gCZfNOX9K3k1J5SC0HhqyJ6IG47lxzcDAv7TaPh98k0PAf4gxmUx9b4bSRYR-3HXWfxsw5cUWAqTUq7bG1VFX_ZbK1jT78EpvdbWzh-UQ4qlGRBqdHjR68GWvPiJg1ZqxEKSXMgU0NFSOmyAs">
+      <p class="font-bold">Advanced React Patterns</p>
+      <p class="text-xs text-slate-500">Completed June 12, 2023</p>
+    </div>
+
+    <div class="bg-white border p-4">
+      <img class="w-full mb-2"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKjGyj0_-OdKJJwfOD_HZGKEiruT48X4VXBjXJgDdWN_YMGae08BTa1TNnQ7GL8MOLBCyZdsoHCiknTFd0io0DFZL96RFUpbK7I_CBMoh5ybSMxAeRbbD5rHV7grxhFbS0dcftoOAVkTNnui-x4Ha8KlfhH8nRoAjfZd1R9d4P1wRmzpRef1Az_gfNywVHPM_j00h_av0-hPH4nqw-TfhsGB5m96O_B6aTNnPyQYBOHdzR7wDoSnFymW_62A6dH9xQdd4ltHh-_K8">
+      <p class="font-bold">Modern CSS Masterclass</p>
+      <p class="text-xs text-slate-500">Completed April 28, 2023</p>
+    </div>
+
+    <div class="bg-white border p-4">
+      <h4 class="font-bold mb-2">Recent Achievements</h4>
+      <p class="text-sm">🏆 Fast Learner</p>
+      <p class="text-sm">🔥 7 Day Streak</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t p-4 text-xs text-slate-400 text-center">
+  © 2024 SkillFlow Learning Inc. All rights reserved.
+</footer>
+
+</body>
+</html>
