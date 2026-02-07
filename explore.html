@@ -48,7 +48,6 @@ aspect-ratio: 16/9;
 <!-- MAIN CONTENT -->
 <main class="max-w-5xl mx-auto px-6 py-10">
 
-<!-- TITLE -->
 <h2 class="text-3xl font-bold mb-2">
 Mastering React Hooks
 </h2>
@@ -57,7 +56,6 @@ Mastering React Hooks
 Learn how modern React manages state and lifecycle using Hooks.
 </p>
 
-<!-- COURSE DETAILS -->
 <div class="flex gap-6 text-sm text-gray-500 mb-6">
 <span>⏱ Duration: 13:14 Minutes</span>
 <span>📊 Level: Beginner</span>
@@ -66,10 +64,17 @@ Learn how modern React manages state and lifecycle using Hooks.
 
 <!-- VIDEO PLAYER -->
 <div class="video-container bg-black rounded-lg overflow-hidden shadow-lg mb-8">
-  
-<video class="w-full h-full" controls>
-    <source src="react-hooks.mp4" type="video/mp4">
-    Your browser does not support video.
+
+<video 
+class="w-full h-full"
+controls
+preload="metadata"
+playsinline>
+
+<source src="react-hooks.mp4" type="video/mp4">
+
+Your browser does not support video.
+
 </video>
 
 </div>
@@ -85,7 +90,6 @@ Learn how modern React manages state and lifecycle using Hooks.
 <p class="text-sm text-gray-500 mt-2">
 40% Completed
 </p>
-
 </div>
 
 <!-- DESCRIPTION -->
@@ -133,7 +137,6 @@ Senior Frontend Engineer specializing in React ecosystem and UI architecture.
 
 </section>
 
-<!-- NAV BUTTONS -->
 <div class="flex justify-between">
 
 <button class="bg-gray-300 px-5 py-2 rounded">
@@ -148,15 +151,9 @@ Next Lesson
 
 </main>
 
-<!-- FOOTER -->
 <footer class="bg-white text-center p-4 text-sm text-gray-400">
 © 2026 SkillFlow Learning Platform
 </footer>
 
 </body>
 </html>
-
-
-
-
-
