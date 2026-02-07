@@ -45,17 +45,17 @@
 
   <!-- Filters -->
   <div class="flex gap-2 mb-6 flex-wrap">
-    <button class="bg-blue-500 text-white px-4 py-2 rounded text-sm">All</button>
-    <button class="bg-white px-4 py-2 rounded text-sm border">Frontend</button>
-    <button class="bg-white px-4 py-2 rounded text-sm border">Backend</button>
-    <button class="bg-white px-4 py-2 rounded text-sm border">Design</button>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded text-sm transition hover:scale-105">All</button>
+    <button class="bg-white px-4 py-2 rounded text-sm border transition hover:bg-blue-100">Frontend</button>
+    <button class="bg-white px-4 py-2 rounded text-sm border transition hover:bg-blue-100">Backend</button>
+    <button class="bg-white px-4 py-2 rounded text-sm border transition hover:bg-blue-100">Design</button>
   </div>
 
   <!-- Courses Grid -->
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
     <!-- Course Card -->
-    <div class="bg-white rounded shadow p-4">
+    <div class="bg-white rounded shadow p-4 transition hover:scale-105">
       <img
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ-gPfvuFoe3yIhPICvjyfshyG3P4Bojdky0y5dHla-fbvbKLfSPEKHuiAd9_GSl-_jO1r5ZrvrB3asrll4LpVdn9jvuc1Lk8S7zC-nZU98IwWnHnm7oEmu7HbH1gCZfNOX9K3k1J5SC0HhqyJ6IG47lxzcDAv7TaPh98k0PAf4gxmUx9b4bSRYR-3HXWfxsw5cUWAqTUq7bG1VFX_ZbK1jT78EpvdbWzh-UQ4qlGRBqdHjR68GWvPiJg1ZqxEKSXMgU0NFSOmyAs"
         class="w-full h-40 object-cover rounded mb-3"
@@ -68,12 +68,12 @@
 
       <div class="flex justify-between items-center text-sm">
         <span class="font-semibold text-blue-500">Free</span>
-        <button class="text-blue-500">View</button>
+        <a href="explore.html" class="text-blue-500">View</a>
       </div>
     </div>
 
     <!-- Course Card -->
-    <div class="bg-white rounded shadow p-4">
+    <div class="bg-white rounded shadow p-4 transition hover:scale-105">
       <img
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKjGyj0_-OdKJJwfOD_HZGKEiruT48X4VXBjXJgDdWN_YMGae08BTa1TNnQ7GL8MOLBCyZdsoHCiknTFd0io0DFZL96RFUpbK7I_CBMoh5ybSMxAeRbbD5rHV7grxhFbS0dcftoOAVkTNnui-x4Ha8KlfhH8nRoAjfZd1R9d4P1wRmzpRef1Az_gfNywVHPM_j00h_av0-hPH4nqw-TfhsGB5m96O_B6aTNnPyQYBOHdzR7wDoSnFymW_62A6dH9xQdd4ltHh-_K8"
         class="w-full h-40 object-cover rounded mb-3"
@@ -91,7 +91,7 @@
     </div>
 
     <!-- Course Card -->
-    <div class="bg-white rounded shadow p-4">
+    <div class="bg-white rounded shadow p-4 transition hover:scale-105">
       <img
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDehN01vLJ1NlnihipGpoPUH0H1WLsTmBBFAio7AlmwCznPkuH_Hh5yAvSWAdj98B_fQxVitFiyBM5fFHSH_NsUJI8P0XnsLWocdw2CWJpI456UqtQYaGefWv6-LcJYNTxw8k8H9VL1nSb-9V_ox45hyB7nAImGFmgLtIZn0OXtZTZcZYy66PtqlT5BN9dNJhFzhgR9DBBK5imMk4JLnLPQvlFOtOCt7H1WBslwDXeKb7v5zV0aelaCACHRjTrYmzPGO9Ln41BfdcI"
         class="w-full h-40 object-cover rounded mb-3"
@@ -109,6 +109,49 @@
     </div>
 
   </div>
+
+  <!-- Course Table -->
+  <section class="mt-12">
+    <h3 class="text-2xl font-bold mb-4">Course Details Table</h3>
+
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white border border-gray-300 rounded shadow">
+
+        <thead class="bg-blue-500 text-white">
+          <tr>
+            <th class="py-3 px-4 border">Course Name</th>
+            <th class="py-3 px-4 border">Level</th>
+            <th class="py-3 px-4 border">Duration</th>
+            <th class="py-3 px-4 border">Price</th>
+          </tr>
+        </thead>
+
+        <tbody class="text-center">
+          <tr class="hover:bg-gray-100 transition">
+            <td class="py-3 px-4 border">React Basics</td>
+            <td class="border">Beginner</td>
+            <td class="border">5 Hours</td>
+            <td class="border">Free</td>
+          </tr>
+
+          <tr class="hover:bg-gray-100 transition">
+            <td class="py-3 px-4 border">CSS Layouts</td>
+            <td class="border">Intermediate</td>
+            <td class="border">6 Hours</td>
+            <td class="border">₹399</td>
+          </tr>
+
+          <tr class="hover:bg-gray-100 transition">
+            <td class="py-3 px-4 border">UI Design</td>
+            <td class="border">Beginner</td>
+            <td class="border">8 Hours</td>
+            <td class="border">₹999</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </section>
 
 </main>
 
